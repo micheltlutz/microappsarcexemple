@@ -1,0 +1,9 @@
+// MARK: - General
+"yes"="Yes";
+"no"="No";
+"ok"="Ok";
+
+// MARK: - Scenes
+
+"home"="Home";
+"settings"="Settings";
