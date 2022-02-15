@@ -13,7 +13,7 @@ let package = Package(
     products: [
         .library(
             name: "ProjectFoundations",
-            targets: ["ProjectFoundations"]),
+            targets: ["ProjectFoundations"])
     ],
     dependencies: [],
     targets: [
@@ -22,6 +22,6 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "ProjectFoundationsTests",
-            dependencies: ["ProjectFoundations"]),
+            dependencies: ["ProjectFoundations"])
     ]
 )

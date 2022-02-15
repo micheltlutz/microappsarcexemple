@@ -9,6 +9,8 @@ final class AppManager: NSObject {
         return navigationController
     }()
 
+    // MARK: - Initialization
+
     init(window: UIWindow) {
         self.window = window
 
@@ -25,9 +27,9 @@ final class AppManager: NSObject {
     }
 
     private func startMainCoordinator() {
-//        let mainCoordinator = MainCoordinator()
-//        mainCoordinator.start()
-//
-//        self.window.rootViewController = mainCoordinator.tabController
+        let mainCoordinator = MainCoordinator()
+        mainCoordinator.start()
+
+        self.window.rootViewController = mainCoordinator.tabController
     }
 }

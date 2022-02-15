@@ -7,7 +7,7 @@ public final class SettingsViewController: UIViewController {
 
     private let secondScreenButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Go to second screen", for: .normal)
+        button.setTitle("Go to second screen", for: .normal) // Mostrar como criar
 
         return button
     }()
@@ -16,7 +16,7 @@ public final class SettingsViewController: UIViewController {
 
     private let viewModel: SettingsViewModelProtocol
     static var titleTabBarItem: String = {
-        return "Settings"
+        return "Settings" // Mostrar como criar
     }()
 
     // MARK: - Initialization
@@ -61,6 +61,8 @@ public final class SettingsViewController: UIViewController {
         viewModel.openSettingsSecondScreenAction()
     }
 }
+
+// MARK: - ViewConfigurationProtocol
 
 extension SettingsViewController: ViewConfigurationProtocol {
     public func setupConstraints() {

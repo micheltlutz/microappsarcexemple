@@ -1,15 +1,16 @@
 import UIKit
 import ProjectFoundations
+import ProjectUI
 
-class HomeViewController: UIViewController {
-    // MARK: - Properties
+final class HomeViewController: UIViewController {
+    // MARK: - Instance properties
 
     static var titleTabBarItem: String = {
         return I18n.Home.title.text
     }()
 
     // MARK: - Initialization
-    
+
     init() {
         super.init(nibName: nil, bundle: nil)
 
@@ -25,7 +26,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .green
+        setupViewConfiguration()
     }
 
     // MARK: - Functions
@@ -40,5 +41,16 @@ class HomeViewController: UIViewController {
                                              selectedImage: UIImage(systemName: "house.fill"))
         tabBarItem = tabSessionBarItem
         title = HomeViewController.titleTabBarItem
+    }
+}
+
+// MARK: - ViewConfigurationProtocol
+
+extension HomeViewController: ViewConfigurationProtocol {
+    func setupConstraints() {}
+    func buildViewHierarchy() {}
+
+    func configureViews() {
+        view.backgroundColor = .green
     }
 }

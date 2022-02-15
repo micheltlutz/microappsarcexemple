@@ -35,6 +35,6 @@ extension SettingsSecondViewController: ViewConfigurationProtocol {
     }
 
     public func configureViews() {
-        view.backgroundColor = .gray
+        view.backgroundColor = .yellow
     }
 }

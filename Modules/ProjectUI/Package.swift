@@ -13,7 +13,7 @@ let package = Package(
     products: [
         .library(
             name: "ProjectUI",
-            targets: ["ProjectUI"]),
+            targets: ["ProjectUI"])
     ],
     dependencies: [],
     targets: [
@@ -22,6 +22,6 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "ProjectUITests",
-            dependencies: ["ProjectUI"]),
+            dependencies: ["ProjectUI"])
     ]
 )

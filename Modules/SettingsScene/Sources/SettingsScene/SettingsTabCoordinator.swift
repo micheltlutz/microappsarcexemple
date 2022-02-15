@@ -5,8 +5,8 @@ public protocol SettingsSceneNavigationDelegate: AnyObject {
     func shouldOpenSettingsSecondScreen()
 }
 
-final class SettingsTabCoordinator: BaseCoordinator, TabItemCoordinator {
-    var navigationController = UINavigationController()
+public final class SettingsTabCoordinator: BaseCoordinator, TabItemCoordinator {
+    public var navigationController = UINavigationController()
     /*
      Neste caso desativei o linter pois não temos neste exemplo uma amarração do delegate,
      que seria uma classe externa a este coordinator, como por exemplo um Router
@@ -14,13 +14,17 @@ final class SettingsTabCoordinator: BaseCoordinator, TabItemCoordinator {
     // swiftlint:disable weak_delegate
     private var navigationDelegate: SettingsSceneNavigationDelegate?
 
-    override init() {
+    // MARK: - Initialization
+
+    public override init() {
         super.init()
 
         navigationDelegate = self
     }
 
-    override func start() {
+    // MARK: - Functions
+
+    public override func start() {
         let viewModel = SettingsViewModel(navigationDelegate: navigationDelegate)
 
         navigationController.pushViewController(SettingsViewController(viewModel: viewModel), animated: true)
@@ -30,7 +34,7 @@ final class SettingsTabCoordinator: BaseCoordinator, TabItemCoordinator {
 // MARK: - SettingsTabSceneNavigationDelegate
 
 extension SettingsTabCoordinator: SettingsSceneNavigationDelegate {
-    func shouldOpenSettingsSecondScreen() {
+    public func shouldOpenSettingsSecondScreen() {
         navigationController.pushViewController(SettingsSecondViewController(), animated: true)
     }
 }

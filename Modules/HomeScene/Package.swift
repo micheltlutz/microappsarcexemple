@@ -13,7 +13,7 @@ let package = Package(
     products: [
         .library(
             name: "HomeScene",
-            targets: ["HomeScene"]),
+            targets: ["HomeScene"])
     ],
     dependencies: [
         .package(path: "ProjectUI"),
@@ -25,6 +25,6 @@ let package = Package(
             dependencies: ["ProjectUI", "ProjectFoundations"]),
         .testTarget(
             name: "HomeSceneTests",
-            dependencies: ["HomeScene"]),
+            dependencies: ["HomeScene"])
     ]
 )

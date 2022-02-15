@@ -1,12 +1,12 @@
 import UIKit
 
-protocol TabCoordinator: CoordinatorProtocol {
+public protocol TabCoordinator: CoordinatorProtocol {
     var tabController: UITabBarController { get }
 
     func setup()
 }
 
-extension TabCoordinator {
+public extension TabCoordinator {
     func start(with url: URL?) {}
     func add(childCoordinator: CoordinatorProtocol) {}
     func remove(childCoordinator: CoordinatorProtocol) {}

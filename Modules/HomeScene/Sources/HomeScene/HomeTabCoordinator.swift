@@ -1,25 +1,30 @@
 import UIKit
 import ProjectUI
 
-protocol HomeTabSceneNavigationDelegate: AnyObject {
-}
+// MARK: - HomeTabSceneNavigationDelegate definition
 
-final class HomeTabCoordinator: BaseCoordinator, TabItemCoordinator {
-    var navigationController = UINavigationController()
+public protocol HomeTabSceneNavigationDelegate: AnyObject {}
+
+public final class HomeTabCoordinator: BaseCoordinator, TabItemCoordinator {
+    // MARK: - Instance properties
+
+    public var navigationController = UINavigationController()
     private weak var navigationDelegate: HomeTabSceneNavigationDelegate?
 
-    override init() {
+    // MARK: - Initialization
+
+    public override init() {
         super.init()
         navigationDelegate = self
     }
 
-    override func start() {
+    // MARK: - functions
+
+    public override func start() {
         navigationController.pushViewController(HomeViewController(), animated: true)
     }
 }
 
 // MARK: - HomeTabSceneNavigationDelegate
 
-extension HomeTabCoordinator: HomeTabSceneNavigationDelegate {
-
-}
+extension HomeTabCoordinator: HomeTabSceneNavigationDelegate {}
