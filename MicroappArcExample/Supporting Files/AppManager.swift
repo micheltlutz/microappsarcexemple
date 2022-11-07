@@ -27,6 +27,8 @@ final class AppManager: NSObject {
         startMainCoordinator()
     }
 
+
+    
     private func startMainCoordinator() {
         let mainCoordinator = MainCoordinator()
         mainCoordinator.start()
