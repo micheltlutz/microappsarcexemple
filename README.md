@@ -10,4 +10,5 @@ This material is used as an initial project for training on good development pra
 
 In this project I present the initial basis for an application with Microapps architecture.
 
+
 -

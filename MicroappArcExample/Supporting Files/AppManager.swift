@@ -1,5 +1,5 @@
 import UIKit
-
+/// AppManager
 final class AppManager: NSObject {
     private let window: UIWindow
 
