@@ -29,7 +29,6 @@ final class AppManager: NSObject {
 
     private func startMainCoordinator() {
         let mainCoordinator = MainCoordinator()
-
         mainCoordinator.start()
 
         self.window.rootViewController = mainCoordinator.tabController
