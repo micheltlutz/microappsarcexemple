@@ -1,4 +1,5 @@
 import UIKit
+
 /// AppManager
 final class AppManager: NSObject {
     private let window: UIWindow
@@ -28,6 +29,7 @@ final class AppManager: NSObject {
 
     private func startMainCoordinator() {
         let mainCoordinator = MainCoordinator()
+
         mainCoordinator.start()
 
         self.window.rootViewController = mainCoordinator.tabController
