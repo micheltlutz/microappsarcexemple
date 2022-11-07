@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DA45BE6291992730059141F /* MicroappArcExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA45BE5291992730059141F /* MicroappArcExampleTests.swift */; };
 		D00A6EE127BA857D00BF02FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A6EE027BA857D00BF02FD /* AppDelegate.swift */; };
 		D00A6EE327BA857D00BF02FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A6EE227BA857D00BF02FD /* SceneDelegate.swift */; };
 		D00A6EEA27BA857F00BF02FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00A6EE927BA857F00BF02FD /* Assets.xcassets */; };
@@ -21,7 +22,19 @@
 		D0D64F1027BBDAC800545CB3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D64F0F27BBDAC800545CB3 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5DA45BE7291992730059141F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D00A6ED527BA857D00BF02FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D00A6EDC27BA857D00BF02FD;
+			remoteInfo = MicroappArcExample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		5DA45BE3291992730059141F /* MicroappArcExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicroappArcExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA45BE5291992730059141F /* MicroappArcExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroappArcExampleTests.swift; sourceTree = "<group>"; };
 		D00A6EDD27BA857D00BF02FD /* MicroappArcExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroappArcExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00A6EE027BA857D00BF02FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D00A6EE227BA857D00BF02FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +52,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5DA45BE0291992730059141F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D00A6EDA27BA857D00BF02FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,11 +73,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DA45BE4291992730059141F /* MicroappArcExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DA45BE5291992730059141F /* MicroappArcExampleTests.swift */,
+			);
+			path = MicroappArcExampleTests;
+			sourceTree = "<group>";
+		};
 		D00A6ED427BA857D00BF02FD = {
 			isa = PBXGroup;
 			children = (
 				D00A6EDF27BA857D00BF02FD /* MicroappArcExample */,
 				D00A6EF427BA86D400BF02FD /* Modules */,
+				5DA45BE4291992730059141F /* MicroappArcExampleTests */,
 				D00A6EDE27BA857D00BF02FD /* Products */,
 				D0D64F0627BBDA9E00545CB3 /* Frameworks */,
 			);
@@ -67,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				D00A6EDD27BA857D00BF02FD /* MicroappArcExample.app */,
+				5DA45BE3291992730059141F /* MicroappArcExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +154,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5DA45BE2291992730059141F /* MicroappArcExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DA45BEB291992730059141F /* Build configuration list for PBXNativeTarget "MicroappArcExampleTests" */;
+			buildPhases = (
+				5DA45BDF291992730059141F /* Sources */,
+				5DA45BE0291992730059141F /* Frameworks */,
+				5DA45BE1291992730059141F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DA45BE8291992730059141F /* PBXTargetDependency */,
+			);
+			name = MicroappArcExampleTests;
+			productName = MicroappArcExampleTests;
+			productReference = 5DA45BE3291992730059141F /* MicroappArcExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D00A6EDC27BA857D00BF02FD /* MicroappArcExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D00A6EF127BA857F00BF02FD /* Build configuration list for PBXNativeTarget "MicroappArcExample" */;
@@ -155,9 +203,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					5DA45BE2291992730059141F = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = D00A6EDC27BA857D00BF02FD;
+					};
 					D00A6EDC27BA857D00BF02FD = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -177,11 +229,19 @@
 			projectRoot = "";
 			targets = (
 				D00A6EDC27BA857D00BF02FD /* MicroappArcExample */,
+				5DA45BE2291992730059141F /* MicroappArcExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5DA45BE1291992730059141F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D00A6EDB27BA857D00BF02FD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +276,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5DA45BDF291992730059141F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA45BE6291992730059141F /* MicroappArcExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D00A6ED927BA857D00BF02FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,6 +297,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DA45BE8291992730059141F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D00A6EDC27BA857D00BF02FD /* MicroappArcExample */;
+			targetProxy = 5DA45BE7291992730059141F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D09EBDED27BC0B3D0040EC82 /* Localizable.strings */ = {
@@ -250,6 +326,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5DA45BE9291992730059141F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MicroappArcExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MicroappArcExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MicroappArcExample";
+			};
+			name = Debug;
+		};
+		5DA45BEA291992730059141F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MicroappArcExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MicroappArcExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MicroappArcExample";
+			};
+			name = Release;
+		};
 		D00A6EEF27BA857F00BF02FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -425,6 +539,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5DA45BEB291992730059141F /* Build configuration list for PBXNativeTarget "MicroappArcExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DA45BE9291992730059141F /* Debug */,
+				5DA45BEA291992730059141F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		D00A6ED827BA857D00BF02FD /* Build configuration list for PBXProject "MicroappArcExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
